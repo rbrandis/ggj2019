@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d4dbdbf04c6ebf4ab9bbaaea3ca6638, type: 3}
   m_Name: WeatherMakerDayNightCycleProfile_Default
   m_EditorClassIdentifier: 
-  Speed: 10
-  NightSpeed: 10
+  Speed: 0
+  NightSpeed: 0
   UpdateInterval: 0.03
-  TimeOfDay: 45348
+  TimeOfDay: 75597
   TimeOfDayLabel: 11:56 AM
   Year: 2017
   Month: 3
@@ -326,7 +326,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  NightAmbientColorIntensity: 0
+  NightAmbientColorIntensity: 0.43
   NightAmbientColorSky:
     serializedVersion: 2
     key0: {r: 0.5808823, g: 0.5837729, b: 1, a: 1}
