@@ -1,0 +1,138 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WeatherMakerNoiseMaterial
+  m_Shader: {fileID: 4800000, guid: c51379e8f0d291a4289c1a2f7981933c, type: 3}
+  m_ShaderKeywords: WATER_EDGEBLEND_ON WATER_REFLECTIVE
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HighTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LowTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Amp: 0.5
+    - _Amplitude: 1
+    - _AnimSpeed: 1
+    - _AnimationSpeed: 0
+    - _BumpScale: 1
+    - _CellType: 1
+    - _Cutoff: 0.5
+    - _DetailNormalMapScale: 1
+    - _Displacement: 1
+    - _DistanceFunction: 2
+    - _DstBlend: 0
+    - _EndFrame: 1
+    - _Frame: 0.015625
+    - _Frequency: 8
+    - _Gain: 0.5
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Invert: 0
+    - _Jitter: 1.5
+    - _Lacunarity: 2
+    - _Metallic: 0
+    - _Mode: 0
+    - _OcclusionStrength: 1
+    - _Octaves: 6
+    - _Parallax: 0.02
+    - _Perlin_Amp: 0.5
+    - _Perlin_AnimationSpeed: 0.2
+    - _Perlin_Decay: 0.5
+    - _Perlin_Frame: 0
+    - _Perlin_Frequency: 4
+    - _Perlin_Gain: 0.5
+    - _Perlin_Invert: 0
+    - _Perlin_Inverter: 0
+    - _Perlin_Lacunarity: 2
+    - _Perlin_Multiplier: 1
+    - _Perlin_Octaves: 6
+    - _Perlin_Power: 8
+    - _Perlin_Start_Weight: 0.295
+    - _Persistence: 1
+    - _Scale: 10
+    - _Seamless_Tiling: 1
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Transparency: 1
+    - _Type: 9
+    - _UVSec: 0
+    - _Worley_Amp: 0.2
+    - _Worley_AnimationSpeed: 0.1
+    - _Worley_Decay: 0.7
+    - _Worley_Frame: 1
+    - _Worley_Frequency: 22
+    - _Worley_Gain: 0.2
+    - _Worley_Invert: 1
+    - _Worley_Inverter: 1
+    - _Worley_Jitter: 1.2
+    - _Worley_Lacunarity: 2
+    - _Worley_Multiplier: -1
+    - _Worley_Octaves: 2
+    - _Worley_Perlin_Factor: 0.3
+    - _Worley_Perlin_Factor2: 0.3
+    - _Worley_Power: 4
+    - _Worley_Start_Weight: 0.4
+    - _ZWrite: 1
+    m_Colors:
+    - _Amp: {r: 0, g: 0, b: 0, a: 0}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _HighColor: {r: 1, g: 1, b: 1, a: 1}
+    - _LowColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Offset: {r: 0, g: 0, b: 0, a: 0}
