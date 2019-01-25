@@ -15,7 +15,7 @@ MonoBehaviour:
   Speed: 10
   NightSpeed: 10
   UpdateInterval: 0.03
-  TimeOfDay: 43000
+  TimeOfDay: 45348
   TimeOfDayLabel: 11:56 AM
   Year: 2017
   Month: 3
