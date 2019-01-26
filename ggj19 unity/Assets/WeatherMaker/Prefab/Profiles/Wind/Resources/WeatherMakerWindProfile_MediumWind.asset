@@ -18,11 +18,11 @@ MonoBehaviour:
     Maximum: 20
   AutoWindIntensity: 1
   WindMaximumChangeRotation:
-    Minimum: 15
-    Maximum: 60
+    Minimum: 0
+    Maximum: 0
   WindChangeRotationDurationPercent:
-    Minimum: 0.2
-    Maximum: 0.5
+    Minimum: 0
+    Maximum: 0
   WindMainMultiplier: 0.02
   WindTurbulenceRange:
     Minimum: 0
