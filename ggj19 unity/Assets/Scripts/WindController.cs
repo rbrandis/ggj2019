@@ -5,7 +5,7 @@ using UnityEngine;
 public class WindController : MonoBehaviour
 {
     [SerializeField]
-    Transform windTransform, particleTransform;
+    Transform windTransform;
 
     [SerializeField]
     float minDirectionChange = -180f;
@@ -32,9 +32,8 @@ public class WindController : MonoBehaviour
         {
             windDirection = Mathf.Lerp(currentDirection, targetDirection, elapsedTime / transitionDuration);
 
-            Quaternion newRotation = Quaternion.Euler(particleTransform.rotation.eulerAngles.x, windDirection, particleTransform.rotation.z);
+            Quaternion newRotation = Quaternion.Euler(windTransform.rotation.eulerAngles.x, windDirection, windTransform.rotation.z);
             windTransform.rotation = newRotation;
-            particleTransform.rotation = newRotation;
 
             elapsedTime += Time.deltaTime;
 
@@ -42,6 +41,5 @@ public class WindController : MonoBehaviour
                 elapsedTime = transitionDuration;
             yield return new WaitForEndOfFrame();
         }
-        print("done");
     }
 }
