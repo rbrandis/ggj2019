@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 470130}
   - component: {fileID: 3353972}
   - component: {fileID: 2305418}
+  - component: {fileID: 4947594963921008417}
   m_Layer: 0
   m_Name: Birch_5
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 150114}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -18.021818, y: 0.52, z: 10.63564}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!136 &4947594963921008417
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150114}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.272707
+  m_Height: 1.9522662
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.75991225, z: 0.00999999}
