@@ -15,10 +15,12 @@ public class WindController : MonoBehaviour
     [SerializeField]
     float transitionDuration = 1f;
 
+    public float windDirection { get; private set; }
+
     // Start is called before the first frame update
     void Start()
     {
-
+        StartCoroutine(ChangeWindDirection());
     }
 
     // Update is called once per frame
@@ -33,11 +35,20 @@ public class WindController : MonoBehaviour
         float targetDirection = Random.Range(minDirectionChange, maxDirectionChange);
         float elapsedTime = 0f;
 
-        while (elapsedTime < transitionDuration)
+        while (elapsedTime <= transitionDuration)
         {
-            Mathf.Lerp(currentDirection, targetDirection, elapsedTime / transitionDuration);
+            windDirection = Mathf.Lerp(currentDirection, targetDirection, elapsedTime / transitionDuration);
+
+            Quaternion newRotation = Quaternion.Euler(particleTransform.rotation.eulerAngles.x, windDirection, particleTransform.rotation.z);
+            windTransform.rotation = newRotation;
+            particleTransform.rotation = newRotation;
+
             elapsedTime += Time.deltaTime;
+
+            if (elapsedTime >= transitionDuration)
+                elapsedTime = transitionDuration;
             yield return new WaitForEndOfFrame();
         }
+        print("done");
     }
 }
