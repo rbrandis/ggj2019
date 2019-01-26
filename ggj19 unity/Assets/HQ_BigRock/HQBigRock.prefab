@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3351334}
   - component: {fileID: 2393348}
   - component: {fileID: 6465370}
+  - component: {fileID: 4734197146058154498}
   m_Layer: 0
   m_Name: HQBigRock
   m_TagString: Untagged
@@ -87,8 +88,22 @@ MeshCollider:
   m_GameObject: {fileID: 165230}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: e399af9d66682f149b2b761a48e7d46e, type: 3}
+--- !u!136 &4734197146058154498
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 165230}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.8495213
+  m_Height: 1.6990428
+  m_Direction: 1
+  m_Center: {x: -0.0054634814, y: 0.3374852, z: -0.037684202}
