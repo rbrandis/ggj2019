@@ -17,16 +17,9 @@ public class WindController : MonoBehaviour
 
     public float windDirection { get; private set; }
 
-    // Start is called before the first frame update
-    void Start()
+    public void RunChangeWindDirection()
     {
         StartCoroutine(ChangeWindDirection());
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 
     IEnumerator ChangeWindDirection()
