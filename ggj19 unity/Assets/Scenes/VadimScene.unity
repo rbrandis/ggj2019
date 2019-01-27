@@ -12308,6 +12308,9 @@ MonoBehaviour:
   - {fileID: 7350300619412897497, guid: 00c8a41a18421483492a669c31db4c5f, type: 3}
   - {fileID: 6174941379606271231, guid: 5421a0776d4cd4225bb7b7e6d0347430, type: 3}
   maxFoodSpawns: 4
+  hitLayers:
+    serializedVersion: 2
+    m_Bits: 819
 --- !u!1 &1764123168 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6036030659786325876, guid: d7e753b3eea965f4ca05a780a8e81e6d,

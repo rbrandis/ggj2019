@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2393348}
   - component: {fileID: 6465370}
   - component: {fileID: 8169815533813262644}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HQBigRock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
