@@ -8,6 +8,7 @@ public class Food : MonoBehaviour
     Transform particleTransform;
 
     public FoodZone foodZone;
+    public FoodSpawner foodSpawner;
 
     WindController windController;
 
@@ -26,11 +27,20 @@ public class Food : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
-        {
-            //Do something
-            GameObject.FindGameObjectWithTag("GameMaster").GetComponent<ResourceManager>().CollectFood();
-            foodZone.HasFood = false;
-            GameObject.Destroy(gameObject);
-        }
+            StartCoroutine(RemoveFood());
+    }
+
+    IEnumerator RemoveFood()
+    {
+        GameObject.FindGameObjectWithTag("GameMaster").GetComponent<ResourceManager>().CollectFood();
+        foodZone.hasFood = false;
+        GetComponent<MeshRenderer>().enabled = false;
+        GetComponent<SphereCollider>().enabled = false;
+        foodSpawner.SpawnFood();
+
+        //Wait for duration of particle lifetime before destroying object to make sure active particles won't be deleted
+        GetComponentInChildren<ParticleSystem>().Stop();
+        yield return new WaitForSeconds(GetComponentInChildren<ParticleSystem>().startLifetime);
+        GameObject.Destroy(gameObject);
     }
 }
