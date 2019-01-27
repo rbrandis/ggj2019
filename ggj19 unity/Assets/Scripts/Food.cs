@@ -34,7 +34,11 @@ public class Food : MonoBehaviour
     {
         GameObject.FindGameObjectWithTag("GameMaster").GetComponent<ResourceManager>().CollectFood();
         foodZone.hasFood = false;
-        GetComponent<MeshRenderer>().enabled = false;
+        //Find and disable all mesh renderers
+        MeshRenderer[] meshRenderers = GetComponentsInChildren<MeshRenderer>();
+        for (int i = 0; i < meshRenderers.Length; i++)
+            meshRenderers[i].enabled = false;
+
         GetComponent<SphereCollider>().enabled = false;
         foodSpawner.SpawnFood();
 
