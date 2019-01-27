@@ -18,7 +18,10 @@ public class ResourceManager : MonoBehaviour
     int foodUnits;
 
     [SerializeField]
-    Text lifeText, lifeChildrenText, foodUnitsText;
+    Image lifeImage, lifeChildrenImage;
+
+    [SerializeField]
+    Text foodUnitsText;
 
     // Start is called before the first frame update
     void Start()
@@ -56,8 +59,8 @@ public class ResourceManager : MonoBehaviour
 
     void UpdateTexts()
     {
-        lifeText.text = "LIFE: " + life;
-        lifeChildrenText.text = "LIFE CHILDREN: " + lifeChildren;
+        lifeImage.fillAmount = life / 100f;
+        lifeChildrenImage.fillAmount = lifeChildren / 100f;
         foodUnitsText.text = "FOOD: " + foodUnits;
     }
 }
