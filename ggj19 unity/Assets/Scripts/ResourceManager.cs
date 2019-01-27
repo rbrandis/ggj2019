@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ResourceManager : MonoBehaviour
 {
@@ -44,6 +45,8 @@ public class ResourceManager : MonoBehaviour
                 life = 100f;
         }
 
+        if (life <= 0 || lifeChildren <= 0)
+            SceneManager.LoadScene(0);
     }
 
     public void CollectFood()

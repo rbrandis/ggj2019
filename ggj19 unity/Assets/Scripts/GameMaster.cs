@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour
 {
@@ -33,6 +34,9 @@ public class GameMaster : MonoBehaviour
             elapsedTime = 0;
             adjustmentInterval = Random.Range(minInterval, maxInterval);
         }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+            SceneManager.LoadScene(0);
     }
 
     void AdjustEnvironment()
